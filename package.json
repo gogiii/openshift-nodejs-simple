@@ -1,0 +1,24 @@
+{
+  "name": "openshift-nodejs-simple",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "engine": {
+    "node": "*",
+    "npm": "*"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gogiii/openshift-nodejs-simple"
+  },
+  "bugs": {
+    "url": "https://github.com/gogiii/openshift-nodejs-simple/issues"
+  },
+  "homepage": "https://github.com/gogiii/openshift-nodejs-simple"
+}
