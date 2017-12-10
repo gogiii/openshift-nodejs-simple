@@ -5,7 +5,10 @@ var app     = express();
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080;
 var ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
-app.use(express.static('public'));
+// place to serve static files from
+var home = process.env.SIMPLE_HOME || "public";
+
+app.use(express.static(home));
 
 // error handling
 app.use(function(err, req, res, next){
